@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="chosen_v1.8.7/chosen.css">
+    <link rel="stylesheet" href="css/selec.css">
+</head>
+
+<body>
+
+
+    <br><br>
+    <nav>
+        <ul>
+            <li><a class="active" href="index.html">Inicio</a></li>
+            <li><a href="alquiler.html">Alquiler</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section>
+
+
+        <section>
+            <div class="card">
+                <h1 style="text-align: center;">Formulario</h1>
+                <h2 style="text-align: center;">Alquiler de Transportes Aereos</h2>
+                <div class="contendor-formulario">
+                    <div class="wrap">
+                        <!-- Formulario -->
+                        <form action="javascript:void(0);" method="post" name="formulario_registro" class="formulario">
+                            <div>
+                                <div class="input-group">
+                                    <br>
+                                    <input type="date" id="fechaInico" name="fechaInicio">
+                                    <label for="fechaInicio" class="label">
+                                    Fecha de Inicio:
+                                </label>
+                                </div>
+
+                                <div class="input-group">
+                                    <p style="color: black;">tipo de Transportes
+                                    </p>
+                                    <div class="choise-container">
+                                        <select name="chosen-nosearch" data-placeholder="Elige un color" class="chosen3" data-placeholder="Elige tus colores" multiple>
+                                            <option value="azul">Azul</option>
+                                            <br>
+                                            <option value="amarillo">Amarillo</option>
+                                            <br>
+                                            <option value="blanco">Blanco</option>
+                                            <option value="gris">Gris</option>
+                                            <option value="marron">Marrón</option>
+                                            <option value="naranja">Naranja</option>
+                                            <option value="negro">Negro</option>
+                                            <option value="rojo">Rojo</option>
+                                            <option value="verde">Verde</option>
+                                            <option value="violeta">Violeta</option>
+                                          </select>
+                                    </div>
+
+                                </div>
+
+                                <div class="input-group">
+                                    <br>
+                                    <input type="text" name="modelo" id="modelo">
+                                    <label for="modelo" class="label">
+                                    Modelo:
+                                </label>
+                                </div>
+
+                                <div class="input-group">
+                                    <br>
+                                    <input type="text" name="color" id="color">
+                                    <label for="color" class="label">
+                                    Color:
+                                </label>
+                                </div>
+
+                                <div class="input-group">
+                                    <br>
+                                    <label for="final" class="label">
+                                    Fecha Final:
+                                </label>
+                                    <input type="date" name="final" id="final">
+
+                                </div>
+
+                                <div class="input-group checkbox">
+                                    <br>
+                                    <input type="checkbox" name="terminos" id="terminos" value="true">
+                                    <label for="terminos">
+                                    Acepto los terminos y condiciones
+                                </label>
+                                </div>
+
+                                <input type="submit" id="btn-submit" value="Enviar">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+        <script src="script.js"></script>
+        <script src="jquery.js"></script>
+        <script src="chosen_v1.8.7/chosen.jquery.js"></script>
+        <script>
+            jQuery(document).ready(function() {
+
+                jQuery.getScript("//harvesthq.github.io/chosen/chosen.jquery.js")
+                    .done(function(script, textStatus) {
+                        jQuery(".chosen1").chosen();
+                        jQuery(".chosen2").chosen({
+                            max_selected_options: 2
+                        });
+                        jQuery(".chosen2").bind("chosen:maxselected", function() {
+                            alert("Máximo número de elementos seleccionado")
+                        });
+                        jQuery(".chosen3").chosen({
+                            allow_single_deselect: true,
+                            disable_search_threshold: 100
+                        });
+                    })
+                    .fail(function(jqxhr, settings, exception) {
+                        alert("Error");
+                    });
+
+            });
+        </script>
+</body>
+
+</html>
