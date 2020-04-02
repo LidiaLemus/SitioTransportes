@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.css">
+</head>
+
+<body>
+
+
+    <br><br>
+    <nav>
+        <ul>
+            <li><a class="active" href="index.html">Inicio</a></li>
+            <li><a href="alquiler.html">Alquiler</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="card">
+            <h1 style="text-align: center; color:antiquewhite;">Contacto</h1>
+            <section class="form_wrap">
+
+                <section class="cantact_info">
+                    <section class="info_title">
+                        <span class="fa fa-user-circle"></span>
+                        <h2>INFORMACION<br>DE CONTACTO</h2>
+                    </section>
+                    <section class="info_items">
+                        <p><span class="fa fa-envelope"></span> info.contact@gmail.com</p>
+                        <p><span class="fa fa-mobile"></span> +1(585) 902-8665</p>
+                    </section>
+                </section>
+
+                <form action="" class="form_contact">
+                    <h2>Envia un mensaje</h2>
+                    <div class="user_info">
+                        <label for="names">Nombres *</label>
+                        <input type="text" id="names">
+
+                        <label for="phone">Telefono / Celular</label>
+                        <input type="text" id="phone">
+
+                        <label for="email">Correo electronico *</label>
+                        <input type="text" id="email">
+
+                        <label for="mensaje">Mensaje *</label>
+                        <textarea id="mensaje"></textarea>
+
+                        <input type="button" value="Enviar Mensaje" id="btnSend">
+                    </div>
+                </form>
+
+            </section>
+
+        </div>
+
+    </section>
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
