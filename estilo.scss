@@ -1,0 +1,152 @@
+$primary: #303f9f;
+$light-primary: #bbdefb;
+$white: #f2f2f2;
+$divider: #b6b6b6;
+$error: #d32f2f;
+$borde: 2px;
+$font-family: 'Roboto',
+Arial;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: 0;
+}
+
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.wrap {
+    background-color: #ffffff;
+    box-shadow: 0 0 3px #808080;
+    margin: auto;
+    max-width: 500px;
+    padding: 40px;
+    width: 90%;
+}
+
+.contendor-formulario {
+    color: $white;
+    padding: 50px;
+    width: 100%;
+    .formulario {
+        margin: auto;
+        width: 100%;
+        .input-group {
+            margin-bottom: 32px;
+            position: relative;
+            input[type="text"],
+            input[type="date"],
+            input[type="password"] {
+                background-color: rgba(0, 0, 0, 0);
+                border-style: none;
+                border-bottom: $borde solid $light-primary;
+                color: $primary;
+                font-family: $font-family;
+                font-size: 1em;
+                outline: 0;
+                padding: 15px;
+                width: 100%;
+                &:focus,
+                &:active {
+                    border-bottom: $borde solid $primary;
+                    outline: 0;
+                }
+                &.error {
+                    border-bottom-color: $error;
+                    +label {
+                        color: $error;
+                    }
+                }
+            }
+            label {
+                color: $primary;
+                &.label {
+                    font-size: 1em;
+                    left: 0;
+                    line-height: 1em;
+                    margin-left: 1em;
+                    position: absolute;
+                    top: 1em;
+                    transition: 0.3s ease all;
+                    &.active {
+                        color: $divider;
+                        font-size: 12px;
+                        top: -12px;
+                    }
+                }
+            }
+            &.checkbox label,
+            &.radio label {
+                border-radius: 3px;
+                color: $primary;
+                cursor: pointer;
+                display: inline-block;
+                font-size: 1em;
+                padding: 5px 15px 5px 51px;
+                position: relative;
+                transition: 0.3s ease all;
+                &:hover {
+                    background-color: rgba($light-primary, 1);
+                }
+                &:before {
+                    background-color: rgba(0, 0, 0, 0);
+                    border-radius: 50%;
+                    border: $borde solid $primary;
+                    content: '';
+                    display: inline-block;
+                    height: 17px;
+                    left: 15px;
+                    position: absolute;
+                    width: 17px;
+                }
+            }
+            &.error {
+                label {
+                    color: $error;
+                    &:hover {
+                        background-color: rgba($error, 0.2);
+                    }
+                    &:before {
+                        border-color: $error;
+                    }
+                }
+            }
+            &.checkbox {
+                label:before {
+                    border-radius: 3px;
+                }
+                input[type="checkbox"] {
+                    display: none;
+                    &:checked+label:before {
+                        display: none;
+                    }
+                    &:checked+label {
+                        background-color: $primary;
+                        color: $white;
+                        padding: 5px 15px;
+                    }
+                }
+            }
+        }
+        input[type="submit"] {
+            background-color: $primary;
+            border-radius: 1px;
+            border: $borde solid $white;
+            color: #ffffff;
+            cursor: pointer;
+            display: inline-block;
+            font: normal 16px $font-family;
+            padding: 15px;
+            transition: 0.3s ease all;
+            width: 100%;
+            &:hover {
+                background-color: #11f8d2;
+            }
+        }
+    }
+}
