@@ -14,6 +14,14 @@ Arial;
     padding: 0;
 }
 
+@function numero($num: 500px) {
+    @return $num;
+}
+
+@function numero1($num1: 12px) {
+    @return $num1;
+}
+
 *:focus {
     outline: 0;
 }
@@ -26,7 +34,7 @@ html {
     background-color: #ffffff;
     box-shadow: 0 0 3px #808080;
     margin: auto;
-    max-width: 500px;
+    max-width: numero();
     padding: 40px;
     width: 90%;
 }
@@ -45,7 +53,7 @@ usuario en caso de que no agregamos correctamente los datos.
         margin: auto;
         width: 100%;
         .input-group {
-            margin-bottom: 32px;
+            margin-bottom: (numero1()+20);
             position: relative;
             input[type="text"],
             input[type="date"],
@@ -57,7 +65,7 @@ usuario en caso de que no agregamos correctamente los datos.
                 font-family: $font-family;
                 font-size: 1em;
                 outline: 0;
-                padding: 15px;
+                padding: (numero1()+3);
                 width: 100%;
                 &:focus,
                 &:active {

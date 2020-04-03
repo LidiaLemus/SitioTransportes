@@ -31,7 +31,7 @@
             <div class="contendor-formulario">
                 <div class="wrap">
                     <!-- Formulario para que los clientes puedan alquilar la clase de vehiculos que ellos deseen-->
-                    <form method="post" name="formulario_registro" class="formulario">
+                    <form name="formulario_registro" class="formulario">
                         <div>
                             <div class="input-group">
                                 <br>
@@ -45,40 +45,40 @@
                                 <p style="color: black;">tipo de Transportes
                                 </p>
                                 <select name="tipoTransporte" id="tipoTransporte">
-                                        <option disabled >--Elija una Opcion--</option>
-                                        <option value="terrestre" selected>Terrestre</option>
+                                        <option disabled selected>--Elija una Opcion--</option>
+                                        <option value="terrestre">Terrestre</option>
                                         <option value="maritimo">Maritimo</option>
                                         <option value="aereo">Aereo</option>
                                     </select>
                             </div>
-                            <div id="mostrar">
-
-                            </div>
                             <div class="input-group" id="transporteT">
                                 <p style="color: black;">Vehiculos
                                 </p>
-                                <select name="tipoTransporte" id="terrestre">
-                                        <option value="">Motocicle CRF230</option>
-                                        <option value="">Automovil BMW</option>
-                                        <option value="">Trailer</option>
-                                    </select>
+                                <select name="terrestre" id="terrestre">
+                                    <option disabled selected>--Elija una Opcion--</option>
+                                        <option value="moto">Motocicle CRF230</option>
+                                        <option value="auto">Automovil BMW</option>
+                                        <option value="trailer">Trailer</option>
+                                </select>
                             </div>
                             <div class="input-group" id="transporteA">
                                 <p style="color: black;">Aereo
                                 </p>
                                 <select name="tipoTransporte" id="aereo">
-                                        <option value="">Avion</option>
-                                        <option value="">Helicoptero</option>
-                                        <option value="">Avioneta</option>
+                                        <option disabled selected>--Elija una Opcion--</option> 
+                                        <option value="avion">Avion</option>
+                                        <option value="helicoptero">Helicoptero</option>
+                                        <option value="avioneta">Avioneta</option>
                                     </select>
                             </div>
                             <div class="input-group" id="transporteM">
                                 <p style="color: black;">Maritimo
                                 </p>
-                                <select name="tipoTransporte" id="maritimo">
-                                        <option value="">Barco</option>
-                                        <option value="">Lancha</option>
-                                        <option value="">SubMarino</option>
+                                <select name="maritimo" id="maritimo">
+                                    <option disabled selected>--Elija una Opcion--</option>
+                                        <option value="barco">Barco</option>
+                                        <option value="lancha">Lancha</option>
+                                        <option value="submarino">SubMarino</option>
                                     </select>
                             </div>
 
@@ -97,37 +97,39 @@
                                     Color:
                                 </label>
                             </div>
-
                             <div class="input-group">
                                 <br>
-                                <label for="final" class="label">
-                                    Fecha Final:
+                                <input type="text" name="marca" id="marca">
+                                <label for="color" class="label">
+                                    Marca:
                                 </label>
-                                <input type="date" name="final" id="final">
-
                             </div>
-
-                            <div class="input-group checkbox">
+                            <div class="input-group">
                                 <br>
-                                <input type="checkbox" name="terminos" id="terminos" value="true">
-                                <label for="terminos">
-                                    Acepto los terminos y condiciones
+                                <input type="text" name="motor" id="motor">
+                                <label for="motor" class="label">
+                                    Motor:
                                 </label>
                             </div>
+                            <div class="input-group">
+                                <label for="tipo" class="tipo">
+                                    Tipo de Transporte:
+                                </label>
+                                <input type="text" name="tipo" id="tipo">
 
-                            <input type="submit" id="btn-submit" value="Enviar">
+                            </div>
                         </div>
-                    </form>
+                        <button class="button1">Enviar</button>
                 </div>
+                </form>
             </div>
+        </div>
 
 
         </div>
 
     </section>
     <script src="jquery.js"></script>
-
-    <script src="chosen_v1.8.7/chosen.jquery.js"></script>
     <script>
         $('#transporteT').hide();
         $('#transporteA').hide();
@@ -151,6 +153,7 @@
             }
         })
     </script>
+    <script src="js/datos.js"></script>
 </body>
 
 </html>

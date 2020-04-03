@@ -1,3 +1,4 @@
+/*Declaracion de variables de colores,borde y el tipo de letra que usara el formulario*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -17,6 +18,10 @@ html {
   padding: 40px;
   width: 90%; }
 
+/*Aca tenemos el contener del formulario alquiler,
+declaramos varibales los tipos de input tambien anadimos los colores que vera el 
+usuario en caso de que no agregamos correctamente los datos.
+*/
 .contendor-formulario {
   color: #f2f2f2;
   padding: 50px;
