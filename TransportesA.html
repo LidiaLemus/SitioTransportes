@@ -24,7 +24,7 @@
     </nav>
     <section>
         <div class="card">
-            <h1 class="animated infinite   bounceInDown" style="text-align: center;">Avion</h1>
+            <h1 class="animated infinite   bounceInDown" style="text-align: center; font-size: 18px;">Avion</h1>
             <div class="div-imagen">
 
                 <div style="text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 20px;">
@@ -42,7 +42,7 @@
             </div>
         </div>
         <div class="card">
-            <h1>Globo Aerostatico</h1>
+            <h1 style="font-size: 18px;" class="animated infinite bounceIn">Globo Aerostatico</h1>
             <div class="div-imagen">
 
                 <div style="text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 20px;">
@@ -63,10 +63,10 @@
         </div>
 
         <div class="card">
-            <h1>Parapente</h1>
+            <h1 style="font-size: 18px;" class="animated infinite bounceInRight">Parapente</h1>
             <div class="div-imagen">
 
-                <div style="text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 20px;">
+                <div style="text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 12px;">
                     <p style="text-align: left;">Tipo:terrestre</p>
                     <p style="text-align: left;">Marca:toyota</p>
                     <p style="text-align: left;">Color:Rojo</p>
@@ -86,10 +86,10 @@
     </section>
     <section>
         <div class="card">
-            <h1 style="text-align: center;">Avioneta</h1>
+            <h1 class="animated infinite bounceIn" style="text-align: center;">Avioneta</h1>
             <div class="div-imagen">
 
-                <div style="text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 20px;">
+                <div style="text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 12px;">
                     <p style="text-align: left;">Tipo:terrestre</p>
                     <p style="text-align: left;">Marca:toyota</p>
                     <p style="text-align: left;">Color:Rojo</p>
@@ -104,10 +104,10 @@
             </div>
         </div>
         <div class="card">
-            <h1>Helicopetero</h1>
+            <h1 class="animated infinite   bounceIn">Helicopetero</h1>
             <div class="div-imagen">
 
-                <div style="text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 20px;">
+                <div style="text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 12px;">
                     <p style="text-align: left;">Tipo:terrestre</p>
                     <p style="text-align: left;">Marca:toyota</p>
                     <p style="text-align: left;">Color:Rojo</p>
@@ -125,10 +125,10 @@
         </div>
 
         <div class="card">
-            <h1>Cohete</h1>
+            <h1 class="animated infinite bounceOut">Cohete</h1>
             <div class="div-imagen">
 
-                <div style="text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 20px;">
+                <div style="text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 12px;">
                     <p style="text-align: left;">Tipo:terrestre</p>
                     <p style="text-align: left;">Marca:toyota</p>
                     <p style="text-align: left;">Color:Rojo</p>
@@ -150,30 +150,8 @@
 
     <script src="script.js"></script>
     <script src="jquery.js"></script>
-    <script src="chosen_v1.8.7/chosen.jquery.js"></script>
-    <script>
-        jQuery(document).ready(function() {
 
-            jQuery.getScript("//harvesthq.github.io/chosen/chosen.jquery.js")
-                .done(function(script, textStatus) {
-                    jQuery(".chosen1").chosen();
-                    jQuery(".chosen2").chosen({
-                        max_selected_options: 2
-                    });
-                    jQuery(".chosen2").bind("chosen:maxselected", function() {
-                        alert("Máximo número de elementos seleccionado")
-                    });
-                    jQuery(".chosen3").chosen({
-                        allow_single_deselect: true,
-                        disable_search_threshold: 100
-                    });
-                })
-                .fail(function(jqxhr, settings, exception) {
-                    alert("Error");
-                });
 
-        });
-    </script>
 </body>
 
 </html>
