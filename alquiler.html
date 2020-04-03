@@ -10,11 +10,10 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="chosen_v1.8.7/chosen.css">
     <link rel="stylesheet" href="css/selec.css">
+
 </head>
 
 <body>
-
-
     <br><br>
     <nav>
         <ul>
@@ -23,118 +22,133 @@
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
-
     <section>
-
-
-        <section>
-            <div class="card">
-                <h1 style="text-align: center;">Formulario</h1>
-                <h2 style="text-align: center;">Alquiler de Transportes Aereos</h2>
-                <div class="contendor-formulario">
-                    <div class="wrap">
-                        <!-- Formulario -->
-                        <form action="javascript:void(0);" method="post" name="formulario_registro" class="formulario">
-                            <div>
-                                <div class="input-group">
-                                    <br>
-                                    <input type="date" id="fechaInico" name="fechaInicio">
-                                    <label for="fechaInicio" class="label">
+        <div class="card">
+            <h1 style="text-align: center;" class="animated infinite slideInDown">Formulario</h1>
+            <h2 style="text-align: center;" class="animated infinite slideInDown">Alquiler de Transportes Aereos</h2>
+            <div class="contendor-formulario">
+                <div class="wrap">
+                    <!-- Formulario -->
+                    <form method="post" name="formulario_registro" class="formulario">
+                        <div>
+                            <div class="input-group">
+                                <br>
+                                <input type="date" id="fechaInico" name="fechaInicio">
+                                <label for="fechaInicio" class="label">
                                     Fecha de Inicio:
                                 </label>
-                                </div>
+                            </div>
 
-                                <div class="input-group">
-                                    <p style="color: black;">tipo de Transportes
-                                    </p>
-                                    <div class="choise-container">
-                                        <select name="chosen-nosearch" data-placeholder="Elige un color" class="chosen3" data-placeholder="Elige tus colores" multiple>
-                                            <option value="azul">Azul</option>
-                                            <br>
-                                            <option value="amarillo">Amarillo</option>
-                                            <br>
-                                            <option value="blanco">Blanco</option>
-                                            <option value="gris">Gris</option>
-                                            <option value="marron">Marrón</option>
-                                            <option value="naranja">Naranja</option>
-                                            <option value="negro">Negro</option>
-                                            <option value="rojo">Rojo</option>
-                                            <option value="verde">Verde</option>
-                                            <option value="violeta">Violeta</option>
-                                          </select>
-                                    </div>
+                            <div class="input-group">
+                                <p style="color: black;">tipo de Transportes
+                                </p>
+                                <select name="tipoTransporte" id="tipoTransporte">
+                                        <option disabled >--Elija una Opcion--</option>
+                                        <option value="terrestre" selected>Terrestre</option>
+                                        <option value="maritimo">Maritimo</option>
+                                        <option value="aereo">Aereo</option>
+                                    </select>
+                            </div>
+                            <div id="mostrar">
 
-                                </div>
+                            </div>
+                            <div class="input-group" id="transporteT">
+                                <p style="color: black;">Vehiculos
+                                </p>
+                                <select name="tipoTransporte" id="terrestre">
+                                        <option value="">Motocicle CRF230</option>
+                                        <option value="">Automovil BMW</option>
+                                        <option value="">Trailer</option>
+                                    </select>
+                            </div>
+                            <div class="input-group" id="transporteA">
+                                <p style="color: black;">Aereo
+                                </p>
+                                <select name="tipoTransporte" id="aereo">
+                                        <option value="">Avion</option>
+                                        <option value="">Helicoptero</option>
+                                        <option value="">Avioneta</option>
+                                    </select>
+                            </div>
+                            <div class="input-group" id="transporteM">
+                                <p style="color: black;">Maritimo
+                                </p>
+                                <select name="tipoTransporte" id="maritimo">
+                                        <option value="">Barco</option>
+                                        <option value="">Lancha</option>
+                                        <option value="">SubMarino</option>
+                                    </select>
+                            </div>
 
-                                <div class="input-group">
-                                    <br>
-                                    <input type="text" name="modelo" id="modelo">
-                                    <label for="modelo" class="label">
+                            <div class="input-group">
+                                <br>
+                                <input type="text" name="modelo" id="modelo">
+                                <label for="modelo" class="label">
                                     Modelo:
                                 </label>
-                                </div>
+                            </div>
 
-                                <div class="input-group">
-                                    <br>
-                                    <input type="text" name="color" id="color">
-                                    <label for="color" class="label">
+                            <div class="input-group">
+                                <br>
+                                <input type="text" name="color" id="color">
+                                <label for="color" class="label">
                                     Color:
                                 </label>
-                                </div>
+                            </div>
 
-                                <div class="input-group">
-                                    <br>
-                                    <label for="final" class="label">
+                            <div class="input-group">
+                                <br>
+                                <label for="final" class="label">
                                     Fecha Final:
                                 </label>
-                                    <input type="date" name="final" id="final">
+                                <input type="date" name="final" id="final">
 
-                                </div>
+                            </div>
 
-                                <div class="input-group checkbox">
-                                    <br>
-                                    <input type="checkbox" name="terminos" id="terminos" value="true">
-                                    <label for="terminos">
+                            <div class="input-group checkbox">
+                                <br>
+                                <input type="checkbox" name="terminos" id="terminos" value="true">
+                                <label for="terminos">
                                     Acepto los terminos y condiciones
                                 </label>
-                                </div>
-
-                                <input type="submit" id="btn-submit" value="Enviar">
                             </div>
-                        </form>
-                    </div>
+
+                            <input type="submit" id="btn-submit" value="Enviar">
+                        </div>
+                    </form>
                 </div>
-
-
             </div>
 
-        </section>
-        <script src="script.js"></script>
-        <script src="jquery.js"></script>
-        <script src="chosen_v1.8.7/chosen.jquery.js"></script>
-        <script>
-            jQuery(document).ready(function() {
 
-                jQuery.getScript("//harvesthq.github.io/chosen/chosen.jquery.js")
-                    .done(function(script, textStatus) {
-                        jQuery(".chosen1").chosen();
-                        jQuery(".chosen2").chosen({
-                            max_selected_options: 2
-                        });
-                        jQuery(".chosen2").bind("chosen:maxselected", function() {
-                            alert("Máximo número de elementos seleccionado")
-                        });
-                        jQuery(".chosen3").chosen({
-                            allow_single_deselect: true,
-                            disable_search_threshold: 100
-                        });
-                    })
-                    .fail(function(jqxhr, settings, exception) {
-                        alert("Error");
-                    });
+        </div>
 
-            });
-        </script>
+    </section>
+    <script src="jquery.js"></script>
+
+    <script src="chosen_v1.8.7/chosen.jquery.js"></script>
+    <script>
+        $('#transporteT').hide();
+        $('#transporteA').hide();
+        $('#transporteM').hide();
+
+        $('#tipoTransporte').on('change', function() {
+            var select = document.getElementById('tipoTransporte').value;
+            if (select == 'maritimo') {
+                $('#transporteA').hide();
+                $('#transporteT').hide();
+                $('#transporteM').show();
+
+            } else if (select == 'terrestre') {
+                $('#transporteA').hide();
+                $('#transporteM').hide();
+                $('#transporteT').show();
+            } else if (select == 'aereo') {
+                $('#transporteM').hide();
+                $('#transporteT').hide();
+                $('#transporteA').show();
+            }
+        })
+    </script>
 </body>
 
 </html>
