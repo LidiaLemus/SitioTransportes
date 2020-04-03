@@ -1,113 +1,140 @@
 /*En este archivo esta el css y las transiciones en las paginas las animaciones utilice una librer
 en la cual da muchas ventajas que solo debemos de llamar su funcionalidad por medio de clases.*/
+
 body {
-  margin: 0;
-  background: #181818;
-  color: #fff;
-  line-height: 1.6;
-  font-family: 'Quicksand', sans-serif;
-  padding: 0 1.5em; }
+    margin: 0;
+    background: #181818;
+    color: #fff;
+    line-height: 1.6;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0 1.5em;
+}
 
 ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #807676;
-  top: 0;
-  width: 100%; }
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #807676;
+    top: 0;
+    width: 100%;
+}
 
 li {
-  float: left; }
+    float: left;
+}
 
 li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none; }
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
 
 li a:hover:not(.active) {
-  background-color: #b8e2a4; }
+    background-color: #b8e2a4;
+}
 
 .active {
-  background-color: #4CAF50; }
+    background-color: #4CAF50;
+}
 
 .div-imagen {
-  display: inline-block;
-  position: relative;
-  margin: 10px; }
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+}
 
 .card {
-  float: left;
-  margin: 50px auto;
-  position: relative; }
+    float: left;
+    margin: 50px auto;
+    position: relative;
+}
 
-.div-imagen > div {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  padding: 10px;
-  margin: 0;
-  width: 27vw; }
+.div-imagen>div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    padding: 10px;
+    margin: 0;
+    width: 27vw;
+}
+
 
 /*Disenio de transicion */
+
 .desvanecer:hover {
-  opacity: 0.07;
-  -webkit-transition: opacity 500ms;
-  -moz-transition: opacity 500ms;
-  -o-transition: opacity 500ms;
-  -ms-transition: opacity 500ms;
-  transition: opacity 500ms; }
+    opacity: 0.07;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    -ms-transition: opacity 500ms;
+    transition: opacity 500ms;
+}
 
 .button1 {
-  background-color: #555555;
-  color: white;
-  padding: 15px 32px;
-  border: none;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer; }
+    background-color: #555555;
+    color: white;
+    padding: 15px 32px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
 
 /*Transicion en los botones*/
+
 .button1:hover {
-  -webkit-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  transform: scale(0.8); }
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+}
 
 .ver {
-  background-color: palegreen;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  text-decoration: none; }
+    background-color: palegreen;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 
 /*Desenio de transicion  pasar el cursor*/
+
 .ver:hover {
-  -webkit-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  transform: scale(1.3); }
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
 
 section {
-  height: 100vh;
-  display: flex;
-  justify-content: center; }
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
 
 img {
-  width: 28vw; }
+    width: 28vw;
+}
+
 
 /*Transicion en las imagenes hare un border cuando el cursos este sobre ella*/
+
 img:hover {
-  border-radius: 50%; }
+    border-radius: 50%;
+}
+
 
 /*# sourceMappingURL=main.css.map */
