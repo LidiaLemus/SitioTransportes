@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <select name="opciones" id="opciones">
+        <option value="uno">uno</option>
+        <option value="dos">dos</option>
+        <option value="tres">tres</option>
+    </select>
+
+    <button onclick="ver()">Ver</button>
+    <div id="mostrar">
+
+    </div>
+    <script>
+        function ver() {
+            var prueba = document.getElementById('opciones').value;
+            document.getElementById('mostrar').innertHTML = prueba;
+        }
+    </script>
+</body>
+
+</html>
