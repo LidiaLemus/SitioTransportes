@@ -9,3 +9,9 @@ select {
 .chosen-container-multi .chosen-choices li.search-field input[type="text"] {
     height: 30px !important;
 }
+
+select {
+    border-radius: 10px;
+    background-color: white;
+    height: 5vh;
+}
