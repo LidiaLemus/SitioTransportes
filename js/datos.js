@@ -37,6 +37,15 @@ class Transporte {
             this.tipo = tipo
     }
 }
+/** llamamos a nuestro select le decimos que cambiara el valor, agregamos una funcion
+ * declaramos una variable y que por medio del id del option ira cambiando ese select.active
+ * e ira cambiando dependiendo de su seleccion de transporte.
+ * 
+ */
+
+
+
+
 
 $('#terrestre').on('change', function() {
     var tr = document.getElementById('terrestre').value;
