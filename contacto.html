@@ -7,6 +7,7 @@
     <title>Inicio</title>
 
     <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="fontawesome-free-5.13.0-web/css/all.css">
 </head>
 
@@ -23,40 +24,50 @@
     </nav>
     <section>
         <div class="card">
-            <h1 style="text-align: center; color:antiquewhite;">Contacto</h1>
-            <section class="form_wrap">
+            <h1 style="text-align: center;" class="logo animated infinite tada">Contactanos<span>Usuario</span></h1>
 
-                <section class="cantact_info">
-                    <section class="info_title">
-                        <span class="fa fa-user-circle"></span>
-                        <h2>INFORMACION<br>DE CONTACTO</h2>
-                    </section>
-                    <section class="info_items">
-                        <p><span class="fa fa-envelope"></span> info.contact@gmail.com</p>
-                        <p><span class="fa fa-mobile"></span> +1(585) 902-8665</p>
-                    </section>
-                </section>
-
-                <form action="" class="form_contact">
-                    <h2>Envia un mensaje</h2>
-                    <div class="user_info">
-                        <label for="names">Nombres *</label>
-                        <input type="text" id="names">
-
-                        <label for="phone">Telefono / Celular</label>
-                        <input type="text" id="phone">
-
-                        <label for="email">Correo electronico *</label>
-                        <input type="text" id="email">
-
-                        <label for="mensaje">Mensaje *</label>
-                        <textarea id="mensaje"></textarea>
-
-                        <input type="button" value="Enviar Mensaje" id="btnSend">
-                    </div>
-                </form>
-
-            </section>
+            <div class="contact-wrapper animated bounceInUp">
+                <div class="contact-form">
+                    <h3>Contactanos</h3>
+                    <form action="">
+                        <p>
+                            <label>Nombre Completo</label>
+                            <input type="text" name="fullname">
+                        </p>
+                        <p>
+                            <label>Correo Electronico</label>
+                            <input type="email" name="email">
+                        </p>
+                        <p>
+                            <label>Numero de Telefono</label>
+                            <input type="tel" name="phone">
+                        </p>
+                        <p>
+                            <label>Asunto</label>
+                            <input type="text" name="affair">
+                        </p>
+                        <p class="block">
+                            <label>Mensaje</label>
+                            <textarea name="message" rows="3"></textarea>
+                        </p>
+                        <p class="block">
+                            <button>
+                            Enviar
+                        </button>
+                        </p>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h4>Más información:</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i>Esquipulas, Chiquimula</li>
+                        <li><i class="fas fa-phone"></i> (502) 41 73 08 35</li>
+                        <li><i class="fas fa-envelope-open-text"></i>TransporteAMT@gmail.com</li>
+                    </ul>
+                    <p>Sero un gusto Serviles</p>
+                    <p>TransportesAMT</p>
+                </div>
+            </div>
 
         </div>
 
