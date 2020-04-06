@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/selec.css">
+    <link rel="stylesheet" href="css/tabla.css">
 
 </head>
 
@@ -119,7 +120,7 @@
 
                             </div>
                         </div>
-                        <button class="button1">Enviar</button>
+                        <button class="button1" id="reservar">Enviar</button>
                 </div>
                 </form>
             </div>
@@ -129,6 +130,34 @@
         </div>
 
     </section>
+    <br><br><br><br>
+    <br><br><br><br><br><br>
+    <br><br>
+    <br><br><br><br>
+    <br><br>
+    <section>
+        <div class="card">
+            <h1 style="text-align: center;">Autos Rentados</h1>
+
+            <table id="fila" style="border: 1px; border-collapse: separate;">
+                <thead>
+                    <tr>
+
+                        <th>Modelo</th>
+                        <th>Color</th>
+                        <th>Marca</th>
+                        <th>Motor</th>
+                        <th>Tipo Transporte</th>
+                    </tr>
+                </thead>
+
+            </table>
+
+
+        </div>
+    </section>
+
+    </div>
     <script src="jquery.js"></script>
     <script>
         $('#transporteT').hide();
@@ -152,6 +181,29 @@
                 $('#transporteA').show();
             }
         })
+        $(document).ready(function(event) {
+            $('#reservar').click(function(event) {
+                event.preventDefault();
+                reservar();
+            })
+        })
+
+        function reservar() {
+            event.preventDefault();
+            var modelo = $('#modelo').val();
+            var color = $('#color').val();
+            var marca = $('#marca').val();
+            var motor = $('#motor').val();
+            var tipo = $('#tipo').val();
+
+            var imprimir = "<tbody><tr><td>" + modelo + "</td>" +
+                "<td>" + color + "</td>" +
+                "<td>" + marca + "</td>" +
+                "<td>" + motor + "</td>" +
+                "<td>" + tipo + "</td></tr></tbody>";
+            $('#fila').append(imprimir);
+
+        }
     </script>
     <script src="js/datos.js"></script>
 </body>
